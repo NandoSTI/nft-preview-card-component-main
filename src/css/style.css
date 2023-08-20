@@ -1,0 +1,97 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    background-color: var(--very-dark-blue-main-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    background-color: var(--very-dark-blue-line);
+    border-radius: 10px;
+    padding: 20px;
+    width: 315px;
+    height: 512px;
+}
+
+.container .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.container .card h1 {
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.container p {
+    color: var(--Soft-blue);
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.container .first-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(116, 140, 150, 0.2);
+    margin-bottom: 20px;
+}
+
+.container .first-info .eth {
+    font-size: 13px;
+    display: flex;
+}
+
+.container .first-info .days {
+    font-size: 13px;
+    display: flex;
+}
+
+.container .first-info .eth::before {
+    content: url(../images/icon-ethereum.svg);
+    margin-right: 5px;
+}
+
+.container .first-info .days::before {
+    content: url(../images/icon-clock.svg);
+    margin-right: 5px;
+}
+
+.container .first-info .eth {
+    color: var(--Cyan);
+}
+
+.container .avatar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.container .avatar img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.container .avatar .creation {
+    margin-right: 10px;
+}
+
+.container .avatar .name {
+    color: var(--white);
+    font-size: 15px;
+}
+
