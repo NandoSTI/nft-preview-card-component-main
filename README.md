@@ -29,7 +29,7 @@
 
 ### Links
 
-- Site URL: https://nandosti.github.io/profile-card/
+- Site URL: https://nandosti.github.io/nft-preview-card-component-main/
 
 ### Construído com
 
