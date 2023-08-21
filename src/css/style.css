@@ -3,6 +3,10 @@ body {
     font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     background-color: var(--very-dark-blue-main-bg);
     height: 100vh;
@@ -20,16 +24,47 @@ body {
     height: 512px;
 }
 
-.container .card img {
+.container .card .images {
+    position: relative;
+}
+
+.container .card .images .background-hover {
+    position: absolute;
+    background-color: var(--cyan-hover);
+    width: 100%;
+    height: 93%;
+    top: 0;
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+
+.container .card .images .background-hover:hover {
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.container .card .images .background-hover .img-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .card .img-main {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.container .card h1 {
+.container .card h1 a {
     color: var(--white);
     font-size: 20px;
     margin-bottom: 15px;
+    transition: .3s ease-in-out;
+}
+
+.container .card h1 a:hover {
+    color: var(--Cyan);
 }
 
 .container p {
@@ -90,8 +125,13 @@ body {
     margin-right: 10px;
 }
 
-.container .avatar .name {
+.container .avatar a {
     color: var(--white);
     font-size: 15px;
+    transition: .3s ease-in-out;
+}
+
+.container .avatar a:hover {
+    color: var(--Cyan);
 }
 
